@@ -6,8 +6,3 @@
 body {
   @apply bg-zinc-100  font-serif
 }
-
-.nav{
-  @apply hover:text-blue-500 font-serif
-}
-
