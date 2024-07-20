@@ -7,11 +7,16 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <div className="sm:flex sm:items-center sm:justify-center min-h-screen  p-4 lg:p-5  ">
-        <div className=" sm:w-[1000px] max-w-[900px] min-h-[calc(100vh-2rem)] lg:min-h-[calc(100vh-4rem)]  border border-blue-600 py-5">
-          <NavBar />
-          <div className="overflow-auto max-h-[calc(100vh-8rem)]">
-            {children}
+      <div className="min-h-screen p-4 sm:flex sm:items-center sm:justify-center lg:p-5">
+        <div className="flex h-[calc(100vh-2rem)] max-w-[900px] flex-col border border-blue-600 sm:w-[1000px] lg:h-[calc(100vh-4rem)]">
+          <div className="flex-shrink-0 pt-5">
+            <NavBar />
+          </div>
+          <div className="flex-grow overflow-hidden">
+            <div className="h-full overflow-auto">{children}</div>
+          </div>
+          <div className="flex-shrink-0 border-t border-blue-600 px-5 py-3">
+            hello lorem Lorem ipsum dolor sit amet consectetur
           </div>
         </div>
       </div>
